@@ -1,4 +1,3 @@
-#Video Link: https://www.youtube.com/watch?v=tHUNg8GdRQs
 #Python Array module
 import array as myArray
 
@@ -133,3 +132,29 @@ iden = np.eye(4)
 print(iden)
 rdom = np.random.random((2,2))
 print(rdom)
+
+#0-dimensional array
+zerod = np.array(1)
+print(zerod)
+
+#1-dimensional array
+oned = np.array([1,1])
+print(oned)
+
+#2-dimensional Array
+twod = np.array([[1,2,3,4,5],[1,2,3,4,5]])
+print(twod)
+
+#3-dimensional Array
+threed = np.array([[[1,2,3],[3,4,5]],[[6,7,8],[8,9,9]]])
+print(threed)
+
+#multi-dimensinal array
+multid = np.array([1,2,3,4,5],ndmin=5)
+print(multid)
+
+print(zerod.ndim)
+print(oned.ndim)
+print(twod.ndim)
+print(threed.ndim)
+print(multid.ndim)
